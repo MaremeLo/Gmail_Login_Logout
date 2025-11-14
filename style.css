@@ -1,0 +1,148 @@
+/*All html pages*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+}
+
+/*Login Page*/
+.container1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 50px;
+    margin: 200px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    border: 1px solid black;
+    border-radius: 10px;
+    width:490px; 
+    height:50px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+.links a:hover{
+    color: green;
+}
+#loginButton{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+    border: none;
+}
+#loginButton:hover{
+    background-color: green;
+}
+
+/*Home Page*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+#logoutButton{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+#logoutButton:hover{
+    background-color: green;
+}
+.layout{
+    display: flex;
+    background-color:whitesmoke;
+}
+.sidebar{
+    width: 200px;
+}
+.composeButton{
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.composeButton:hover{
+    background-color: green;
+}
+.sidebar ul{
+    list-style: none;
+    margin-left: -30px;
+}
+.sidebar a{
+    color: blue;
+    font-weight: bold;
+}
+.sidebar a:hover{
+    color: red;
+}
+.content{
+    justify-content: space-around;
+    flex: 1;
+    padding: 20px;
+    height: 500px;
+    background-color: rgb(117, 185, 244);
+}
+#pHome{
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.emails{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+}
+.emailItems{
+    padding: 20px;
+}
+.footer{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    input,#loginButton{
+        width: 100%;
+        font-size: 13px;
+    }
+    .container1{
+        width: 95%;
+        padding: 15px;
+        margin: 30px auto;
+    }
+    .emails{
+        padding: 15px;
+    }
+    .emailItems{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
