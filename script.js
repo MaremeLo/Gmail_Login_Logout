@@ -10,7 +10,7 @@ if(loginButton){
             localStorage.setItem('isLoggedIn', 'true');
             localStorage.setItem('userEmail', emailInput);
 
-            window.location.href = 'Home.html';
+            window.location.href = 'index.html';
         }else{
             alert('Please enter your email and password.');
         }
